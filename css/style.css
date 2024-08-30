@@ -1,0 +1,146 @@
+@font-face {
+    font-family: 'jetbrains';
+    src: url(font/JetBrainsMono-Bold.ttf);
+}
+@font-face {
+    font-family: 'lato';
+    src: url(font/Lato-Regular.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+header {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-position: top;
+    aspect-ratio: 1920/1080;
+    background-attachment:scroll;
+    background-size:contain;
+    background-repeat:repeat-x; 
+    backdrop-filter:opacity(100%);
+    background-image: url(img/referensi.jpg);
+    
+}
+header::before{
+    content: "";
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: auto;
+    opacity: 70%;
+    background-position: top;
+    aspect-ratio: 1920/1080;
+    background-attachment: scroll;
+    background-size:contain;
+    background-repeat:repeat-x; 
+    background-image:linear-gradient(purple,purple, black);
+    
+}
+.container-header {
+    position: relative;
+    z-index: 2;
+}
+.judul-header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+}
+.judul-header h1 {
+    width: 500px;
+    
+    font-size: 5rem;
+    text-align: center;
+    font-family: jetbrains;
+    color: white;
+}
+.main-header {
+    border: 2px solid;
+    height: auto;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+
+}
+.instagram-kelas {
+    
+    border: 1px solid white;
+    height: 450px;
+    width: 350px;
+    border-radius: 30px;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+}
+.main-header-lainnya {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    border: 2px solid;
+}
+.siswa {
+    min-width: 300px;
+    height: 200px;
+    border: 1px solid white;
+    border-radius: 30px;
+    margin: 15px;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+}
+.text-anonim {
+    width: 300px;
+    height: 200px;
+    border: 1px solid white;
+    margin: 15px;
+    border-radius: 30px;
+    background-image: rgb(255, 255, 255);
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+}
+main {
+    width: 100%;
+    height: 100rem;
+    background-image: linear-gradient(black,black);
+}
+main::before {
+    content: "";
+    width: 100%;
+    height: 100rem;
+    background-image: linear-gradient(black,black);
+    backdrop-filter: blur(50%);
+    opacity: 70%;
+}
+
+@media screen and (max-width:450px ) {
+    .judul-header {
+        height: 50px;
+    }
+    .judul-header h1 {
+        font-size: xx-large;
+    }
+    .instagram-kelas {
+        height: 200px;
+        width: 100px;
+        border-radius: 20px;
+    }
+    .siswa {
+        width: 100px;
+        height: 200px;
+    }
+    .main-header-lainnya {
+        max-width: 350;
+    }
+}
